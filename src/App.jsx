@@ -85,8 +85,11 @@ function App() {
       <button onClick={() => setVisible(true)} >Open Form</button>
       
       {document.addEventListener('click', function (event) {
-        if (event.target.id === "myForm") {
+        if (event.target.id === "root") {
           setVisible(false);
+        }
+        else {
+          setVisible(true);
         }
        
         
